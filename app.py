@@ -6,10 +6,10 @@ from flask import Flask, request
 
 
 
-messenger = WhatsApp(environ.get("TOKEN")) #You can use any random characters in here
+messenger = WhatsApp(environ.get("HEROKUWHATSAPTOKEN")) #You can use any random characters in here
 
 
-VERIFY_TOKEN = environ.get("APP_SECRET") #application secret here
+VERIFY_TOKEN = environ.get("0b4aeaeec76d3a20b868cce254fddc25") #application secret here
 
 
 app = Flask(__name__)
